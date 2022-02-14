@@ -7,7 +7,8 @@
 <title>Home</title>
 </head>
 <body>
-<form action="Submit.jsp" method="get">
+<!-- the context path is the url of the app excluding the servlet url -->
+<form action="<%= request.getContextPath() %>/Controller" method="get">
 
 <label for="firstName"> First Name:</label>
 <input type="text" name="firstName"><br/>
